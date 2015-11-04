@@ -25,6 +25,15 @@
    % srednja vrednost mean()
    
    
+   %nalazi max, broj max, i koord max
+   
+maksimum = max(max(A));
+
+s = length(A(A==maksimum));
+
+[i,j] = find(A==maksimum);
+   
+   
    %primer plota 
    
    t=0:0.01:10;
@@ -36,3 +45,7 @@
   (tp>=3 & tp<4).*(6-1.5*tp)+(tp>=4 & tp<5)*0;
   
   plot(t,y);
+  
+  
+  
+  
